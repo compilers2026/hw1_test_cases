@@ -1,0 +1,24 @@
+KW_PROGRAM   program      (1,1)
+IDENT        badtokens    (1,9)
+SEMICOLON    ;            (1,18)
+
+KW_BEGIN     begin        (2,1)
+
+IDENT        x            (3,3)
+ASSIGN       :=           (3,5)
+Error (line 3, col 8): invalid token '@'
+SEMICOLON    ;            (3,9)
+
+Error (line 4, col 3): invalid token '#'
+IDENT        tmp          (4,4)
+ASSIGN       :=           (4,8)
+STRING       "ok"         (4,11)
+SEMICOLON    ;            (4,15)
+
+IDENT        good_name    (5,3)
+ASSIGN       :=           (5,13)
+Error (line 5, col 16): invalid token '~'
+SEMICOLON    ;            (5,17)
+
+KW_END       end          (6,1)
+EOF                       (6,4)
