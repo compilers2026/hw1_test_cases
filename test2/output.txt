@@ -1,0 +1,25 @@
+KW_PROGRAM   program      (1,1)
+IDENT        comments     (1,9)
+SEMICOLON    ;            (1,17)
+
+KW_BEGIN     begin        (2,1)
+
+IDENT        x            (3,3)
+ASSIGN       :=           (3,5)
+STRING       "hi"         (3,8)
+SEMICOLON    ;            (3,12)
+
+IDENT        y            (5,3)
+ASSIGN       :=           (5,5)
+IDENT        z            (5,8)
+DIV          /            (5,10)
+IDENT        w            (5,12)
+SEMICOLON    ;            (5,13)
+
+IDENT        a            (6,3)
+COLON        :            (6,4)
+IDENT        b            (6,5)
+SEMICOLON    ;            (6,6)
+
+KW_END       end          (7,1)
+EOF                       (7,4)
