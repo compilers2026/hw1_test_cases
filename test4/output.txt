@@ -1,0 +1,13 @@
+KW_PROGRAM   program      (1,1)
+IDENT        broken       (1,9)
+SEMICOLON    ;            (1,15)
+
+KW_BEGIN     begin        (2,1)
+
+IDENT        x            (3,3)
+ASSIGN       :=           (3,5)
+Error (line 3, col 8): Unterminated string
+
+Error (line 4, col 3): Unterminated comment
+
+EOF                       (5,4)
