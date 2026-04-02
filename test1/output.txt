@@ -1,0 +1,39 @@
+KW_PROGRAM   program      (1,1)
+IDENT        demo         (1,9)
+SEMICOLON    ;            (1,13)
+
+KW_BEGIN     begin        (2,1)
+
+KW_PROCEDURE procedure    (3,3)
+IDENT        test         (3,13)
+SEMICOLON    ;            (3,17)
+
+IDENT        x            (4,3)
+ASSIGN       :=           (4,5)
+STRING       "hello"      (4,8)
+SEMICOLON    ;            (4,15)
+
+IDENT        y            (5,3)
+COLON        :            (5,4)
+IDENT        z            (5,6)
+SEMICOLON    ;            (5,7)
+
+IDENT        a            (6,3)
+PLUS         +            (6,5)
+IDENT        b            (6,7)
+MINUS        -            (6,9)
+IDENT        c            (6,11)
+MUL          *            (6,13)
+IDENT        d            (6,15)
+DIV          /            (6,17)
+IDENT        e            (6,19)
+SEMICOLON    ;            (6,20)
+
+KW_IF        if           (7,3)
+LPAREN       (            (7,6)
+IDENT        x            (7,7)
+RPAREN       )            (7,8)
+KW_THEN      then         (7,10)
+
+KW_END       end          (8,1)
+EOF                       (8,4)
